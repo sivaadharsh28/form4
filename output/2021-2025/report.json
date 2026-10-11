@@ -1,0 +1,41 @@
+{
+  "config": {
+    "capital": 1000000,
+    "hold": 60,
+    "cost_bps": 10.0,
+    "delay_minutes": 60,
+    "min_purchase": 100000,
+    "min_adv": 50000000,
+    "min_price": 10,
+    "weight": 0.05,
+    "sector_cap": null,
+    "max_positions": 20,
+    "capacity": 0.01
+  },
+  "start": "2021-01-04",
+  "end": "2025-12-31",
+  "metrics": {
+    "cagr": 0.02536934274954694,
+    "sharpe": -0.3338799392185589,
+    "max_drawdown": -0.07072783801220694,
+    "trade_count": 17,
+    "ending_nav": 1132884.8333866594,
+    "average_exposure": 0.04121334608049308,
+    "annualized_two_way_turnover": 0.33630510115329254,
+    "sp500_total_return": 0.9615625024974592
+  },
+  "inputs": {
+    "membership.csv": "999f982db4462727484835be78bdc34179e8289c82c1558e0d2ff80482880037",
+    "prices.csv": "8303c0c241fd64a79b0b0d8b2d454abd0efe82f421ebc5e4f883daad70f10f6f",
+    "sessions.csv": "8116bf52adccd5164038aa13a62a7bfae683c7be6b3ba3b2d1e0af27def2be96",
+    "signals.csv": "009284ddb604358cf87c54ff572989240c002b26e2d30d6a796b1fafa91a31bd",
+    "signals_review_audit.csv": "eb138922b4053fea552af3b38af0eb5e45394429c73c3c133fa6b9036a9c873b"
+  },
+  "limitations": [
+    "No filtered-universe benchmark or factor/sector adjusted alpha in v1.",
+    "No confidence intervals; metrics do not establish credible alpha.",
+    "Amendments excluded pending event-level reconciliation.",
+    "Oversize scheduled exits stop execution; staged exits are not implemented.",
+    "Input provider is responsible for point-in-time coverage and corporate actions."
+  ]
+}

@@ -2,4 +2,14 @@ __pycache__/
 *.pyc
 data/
 output/
+!output/
+output/*
+!output/2021-2025/
+output/2021-2025/*
+!output/2021-2025/report.json
+!output/2021-2025/equity.csv
+!output/2021-2025/trades.csv
+!output/2021-2025/yearly.csv
+!output/2021-2025/sectors.csv
+!output/2021-2025/decisions.csv
 .venv/
