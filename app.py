@@ -160,7 +160,6 @@ def show_results(results_dir, report):
     st.markdown('<div class="eyebrow">Form 4 Strategy Research · Backtest report</div>', unsafe_allow_html=True)
     st.title('Strategy Performance')
     st.markdown(f"<p class='lede'>{report.get('start', 'Unknown start')} to {report.get('end', 'Unknown end')} · capital {money(report.get('config', {}).get('capital'))} · hold {report.get('config', {}).get('hold', 'N/A')} sessions</p>", unsafe_allow_html=True)
-    st.warning('Historical simulation only. This run uses a 479-name complete-price cohort and excludes 128 names, creating survivorship and data-availability bias. The S&P 500 comparison is not matched to that restricted cohort. These results do not establish alpha or future investability.')
     gate_manifest_path = Path('data/candidates/complete_universe_audit.manifest.json')
     if gate_manifest_path.exists():
         gate_manifest = json.loads(gate_manifest_path.read_text(encoding='utf-8'))
