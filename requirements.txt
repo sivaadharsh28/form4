@@ -1,0 +1,5 @@
+# Windows needs the IANA time-zone database for SEC acceptance timestamps.
+tzdata>=2024.1
+streamlit>=1.40
+plotly>=5.24
+pandas>=2.2
